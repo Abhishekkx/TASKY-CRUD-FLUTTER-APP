@@ -1,0 +1,39 @@
+name: crud_app
+description: A Flutter CRUD app for task management.
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  sqflite: ^2.3.0
+  http: ^1.1.0
+  equatable: ^2.0.5
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  intl: ^0.19.0
+  get_it: ^7.7.0
+  logger: ^2.4.0
+  connectivity_plus: ^6.0.5
+  flutter_staggered_animations: ^1.1.1
+  shared_preferences: ^2.3.0
+  flutter_local_notifications: ^19.2.0  # Upgraded to match with timezone ^0.10.1
+  vibration: ^2.1.0
+  timezone: ^0.10.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+  flutter_launcher_icons: ^0.13.1
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo_tasky.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
